@@ -6,7 +6,7 @@
 
 import fs from 'fs';
 
-let weatherFile = '../data/weather.dat';
+let weatherFile = `${__dirname}/../data/weather.dat`;
 let weatherData = fs.readFileSync(weatherFile).toString();
 
 let rows = weatherData.split(/\n/);
