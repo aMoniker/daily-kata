@@ -3,3 +3,5 @@ http://www.codekatas.org/
 https://www.hackerrank.com/dashboard
 https://projecteuler.net/
 https://leetcode.com/
+https://www.codewars.com/
+http://codingdojo.org/KataCatalogue/
