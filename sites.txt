@@ -5,3 +5,4 @@ https://projecteuler.net/
 https://leetcode.com/
 https://www.codewars.com/
 http://codingdojo.org/KataCatalogue/
+https://en.wikipedia.org/wiki/List_of_data_structures
