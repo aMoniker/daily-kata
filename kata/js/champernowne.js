@@ -21,8 +21,8 @@ class Champernowne {
    * @return int
    */
   getDigit(n) {
-    if (n <= 0) {
-      throw `You must request the 1st digit or greater. Digit ${n} requested.`;
+    if (typeof n !== 'number' || n % 1 !== 0 || n <= 0) {
+      return Infinity;
     }
 
     let d = 0; // digit count of the number at position n
@@ -32,7 +32,7 @@ class Champernowne {
       count += this.getNumChars(d);
     } while(n > count);
 
-    let pivotChar = count -= this.getNumChars(d);
+    let pivotChar = count - this.getNumChars(d);
     let offset = Math.ceil((n - pivotChar) / d);
     let number = offset + (d === 1 ? 0 : 10 ** (d - 1)) - 1;
     let numOffset = n - ((pivotChar + 1) + ((offset - 1) * d));
@@ -102,16 +102,12 @@ class Champernowne {
     console.log(`Speed test. Processing ${n} positions.`);
     console.time('took');
     for (let i = 1; i < n; i++) {
-      C.getDigit(i);
+      let d = C.getDigit(i);
+      console.log(`Digit ${i} is ${d}`);
     }
     console.timeEnd('took');
   }
 }
 
 let C = new Champernowne;
-
-// test the first ten thousand digits
-C.testCorrectness(10000);
-
-// test the speed of the algorithm
-C.testSpeed(10000000);
+console.log(C.getDigit(0));
