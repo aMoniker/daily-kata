@@ -8,7 +8,7 @@ import fs from 'fs';
 
 class SpreadFinder {
   loadDataFile = (file) => {
-    return fs.readFileSync(`${__dirname}/../data/${file}`).toString();
+    return fs.readFileSync(`${__dirname}/../../data/${file}`).toString();
   }
 
   findMinSpread = (rows, nameIndex, lowIndex, highIndex) => {

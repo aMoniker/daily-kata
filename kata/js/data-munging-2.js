@@ -6,7 +6,7 @@
 
 import fs from 'fs';
 
-let footballFile = `${__dirname}/../data/football.dat`;
+let footballFile = `${__dirname}/../../data/football.dat`;
 let footballData = fs.readFileSync(footballFile).toString();
 
 let rows = footballData.split(/\n/);
