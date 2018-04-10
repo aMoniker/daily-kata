@@ -1,0 +1,21 @@
+Based Palindromes
+
+Given an integer `n` in base-10, return an array of integers indicating the bases in which that number is palindromic. Bases range from `2` to `1000` inclusive.
+
+Yes, you read that correctly. Base-1000 is fair game.
+
+For example, if `n = 1001` (base-10), then your return value should be `[10,25,...]`;
+
+Since all numbers in base-1 are always palindromic, we'll forgo the unnecessary output and start at base-2. Don't include `1` in the results.
+
+However, for all higher bases, a single character IS considered palindromic, and should be included! (Hint: there's an optimization here...)
+
+If absolutely no bases contain a palindromic number, return an empty array.
+
+Don't worry about validating input. This kata will always give you a valid positive integer for `n`.
+
+As has probably occurred to you, your language won't have built-in facilities for converting to the exotic bases required by this kata. So, you'll have to roll your own system.
+
+Also, note that the particular symbols used for representing values in each base do not matter, as they won't be part of the result. We only care about the number representing the base itself.
+
+Well, that's basically it. Good luck!

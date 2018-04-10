@@ -1,0 +1,13 @@
+Champernowne's Conquest
+
+Ah, I see your magical prowess is nothing to sneeze at! Well, if you're still up to the challenge, get a whiff of this one!
+
+Last time I asked you only to find the `n`th digit of Champernowne's constant, where `n` was an integer necessarily smaller than the max integer value in whichever language you chose.
+
+This time, I will ask you for an arbitrary digit, given as a string argument.
+
+For example, I could ask for digit `'1293023787102174012839120471208...'`.
+
+I might give you a string thousands of digits long! Are you still up to the challenge?
+
+I don't have to tell you that a naïve solution will not work here. You'll have to get very creative, as even a solution involving typical calculations won't be sufficient! But... there must be some pattern to find...
