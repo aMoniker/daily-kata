@@ -102,12 +102,11 @@ class Champernowne {
     console.log(`Speed test. Processing ${n} positions.`);
     console.time('took');
     for (let i = 1; i < n; i++) {
-      let d = C.getDigit(i);
-      console.log(`Digit ${i} is ${d}`);
+      this.getDigit(i);
     }
     console.timeEnd('took');
   }
 }
 
 let C = new Champernowne;
-console.log(C.getDigit(0));
+C.testSpeed(10000000);
