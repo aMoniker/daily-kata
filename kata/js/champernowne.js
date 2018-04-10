@@ -10,7 +10,7 @@
  * Speed test indicates this algorithm finds each one of
  * the first 10 million positions in roughly 2.6 seconds.
  *
- * Runs in O(1) constant time.
+ * Runs in O(log n)
  */
 class Champernowne {
   /**
