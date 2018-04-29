@@ -1,0 +1,1 @@
+Given two graphs G and H, denoted by two sets of vertices Gv and Hv, and two sets of edges Ge and He, determine whether or not the graphs are isomorphic.
