@@ -1,7 +1,7 @@
 # https://www.codewars.com/kata/59afff65f1c8274f270020f5
 
 
-def spinning_rings(inner_max, outer_max):
+def spinning_rings(inner_max: int, outer_max: int):
     inner = 0
     outer = 0
 
