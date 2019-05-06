@@ -1,3 +1,4 @@
 wip/
 node_modules/
 kata/python/venv/
+.mypy_cache/
