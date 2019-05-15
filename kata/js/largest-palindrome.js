@@ -41,6 +41,6 @@ function isPalindrome(n) {
 }
 
 console.time('took');
-largestPalindromicProduct(1234, 9876);
+largestPalindromicProduct(100, 999);
 console.log(`number of palindrome checks required: ${checks}`);
 console.timeEnd('took');
