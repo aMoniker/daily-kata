@@ -1,0 +1,12 @@
+/Users/moniker/Code/daily-kata/kata/cs/bin/Debug/netcoreapp3.1/cs.deps.json
+/Users/moniker/Code/daily-kata/kata/cs/bin/Debug/netcoreapp3.1/cs.runtimeconfig.json
+/Users/moniker/Code/daily-kata/kata/cs/bin/Debug/netcoreapp3.1/cs.runtimeconfig.dev.json
+/Users/moniker/Code/daily-kata/kata/cs/bin/Debug/netcoreapp3.1/cs.dll
+/Users/moniker/Code/daily-kata/kata/cs/bin/Debug/netcoreapp3.1/cs.pdb
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.csprojAssemblyReference.cache
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.csproj.CoreCompileInputs.cache
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.AssemblyInfoInputs.cache
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.AssemblyInfo.cs
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.dll
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.pdb
+/Users/moniker/Code/daily-kata/kata/cs/obj/Debug/netcoreapp3.1/cs.genruntimeconfig.cache
