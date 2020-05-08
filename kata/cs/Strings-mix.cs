@@ -6,12 +6,6 @@ using System.Linq;
 
 public class Mixing
 {
-  static void Main()
-  {
-    string res = Mix("looping is fun but dangerous", "less dangerous than coding");
-    Console.WriteLine(res);
-  }
-
   public static string Mix(string s1, string s2)
   {
     int[] c1 = LowercaseCounts(s1);
