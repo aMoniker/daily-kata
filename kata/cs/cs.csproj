@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+    <DefaultItemExcludes>
+      $(DefaultItemExcludes);
+      Constructing-a-car-1.cs;
+      Constructing-a-car-2.cs;
+      Constructing-a-car-3.cs;
+    </DefaultItemExcludes>
 
+  </PropertyGroup>
 </Project>
