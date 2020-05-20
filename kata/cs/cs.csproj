@@ -8,6 +8,7 @@
       Constructing-a-car-1.cs;
       Constructing-a-car-2.cs;
       Constructing-a-car-3.cs;
+      Decode-the-morse-code-2.cs;
     </DefaultItemExcludes>
 
   </PropertyGroup>
