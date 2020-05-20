@@ -1,5 +1,5 @@
-import math
 from typing import Dict, List
+from util import get_factors_sum
 
 sums: Dict[int, List[int]] = {}
 
@@ -18,20 +18,6 @@ def main():
             if item in sums and key in sums[item]:
                 amicable_sum += item
     print(amicable_sum)
-
-
-def get_factors_sum(n: int) -> int:
-    if n == 1:
-        return 1
-
-    factor_sum = 0
-    step = 1 if n % 2 == 0 else 2
-    limit = int(math.ceil(n / 2) + 1)
-    for i in range(1, limit, step):
-        if n % i == 0:
-            factor_sum += i
-
-    return factor_sum
 
 
 if __name__ == "__main__":
