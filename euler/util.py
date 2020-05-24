@@ -35,3 +35,29 @@ def factorial(n: int) -> int:
     for x in range(2, n + 1):
         product *= x
     return product
+
+
+def generate_primes_naive(start: int, end: int) -> List[int]:
+    primes: List[int] = []
+    if end <= 1:
+        return primes
+    if start == 2:
+        primes.append(2)
+        start += 1
+    if start % 2 == 0:
+        start += 1
+    for x in range(start, end + 1, 2):
+        if is_prime_naive(x):
+            primes.append(x)
+    return primes
+
+
+def is_prime_naive(n: int) -> bool:
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    for x in range(2, math.ceil(math.sqrt(n)) + 1):
+        if n % x == 0:
+            return False
+    return True
