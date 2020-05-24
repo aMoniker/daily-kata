@@ -26,3 +26,12 @@ def get_factors(n: int) -> List[int]:
             factors.append(i)
     factors.append(n)
     return factors
+
+
+def factorial(n: int) -> int:
+    if n == 1:
+        return 1
+    product = 1
+    for x in range(2, n + 1):
+        product *= x
+    return product
