@@ -61,3 +61,11 @@ def is_prime_naive(n: int) -> bool:
         if n % x == 0:
             return False
     return True
+
+
+def is_palindrome(s: str) -> bool:
+    length = len(s)
+    for i in range(0, math.floor(length / 2)):
+        if s[i] != s[length - i - 1]:
+            return False
+    return True
