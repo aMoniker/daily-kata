@@ -1,4 +1,5 @@
 from typing import List
+from util import is_pandigital
 
 
 def main():
@@ -13,21 +14,10 @@ def main():
         if len(s) > 9:
             w -= 1
             continue
-        if is_pandigital(s) and int(s) > largest:
-            largest = int(s)
+        y = int(s)
+        if is_pandigital(y) and y > largest:
+            largest = y
     print(largest)
-
-
-def is_pandigital(s: str) -> bool:
-    if len(s) != 9:
-        return False
-    counts: List[int] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    for c in s:
-        counts[int(c) - 1] += 1
-    for count in counts:
-        if count != 1:
-            return False
-    return True
 
 
 if __name__ == "__main__":

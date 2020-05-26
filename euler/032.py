@@ -1,4 +1,5 @@
 from typing import Dict
+from util import is_pandigital
 
 products: Dict[int, bool] = {}
 
@@ -14,33 +15,9 @@ def process_ranges(aLower: int, aUpper: int, bLower: int, bUpper: int):
         for b in range(bLower, bUpper + 1):
             product = a * b
             if not product in products:
-                print(f"checking {str(a) + str(b) + str(product)}")
-                if is_pandigital(str(a) + str(b) + str(product)):
+                y = int(str(a) + str(b) + str(product))
+                if is_pandigital(y):
                     products[product] = True
-
-
-def is_pandigital(s: str) -> bool:
-    counts: Dict[int, int] = {
-        1: 0,
-        2: 0,
-        3: 0,
-        4: 0,
-        5: 0,
-        6: 0,
-        7: 0,
-        8: 0,
-        9: 0,
-    }
-    if len(s) != 9:
-        return False
-    for c in s:
-        if c == "0":
-            return False
-        counts[int(c)] += 1
-    for _, val in counts.items():
-        if val != 1:
-            return False
-    return True
 
 
 if __name__ == "__main__":
