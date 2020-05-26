@@ -71,13 +71,16 @@ def is_palindrome(s: str) -> bool:
     return True
 
 
-def is_pandigital(n: int) -> bool:
-    s = str(n)
-    if len(s) != 9:
+def is_pandigital(x: int, n: int) -> bool:
+    if n < 1 or n > 9:
         return False
-    counts: List[int] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    s = str(x)
+    if len(s) != n:
+        return False
+    counts: List[int] = [0] * n
     for c in s:
-        if c == "0":
+        y = int(c)
+        if y < 1 or y > n:
             return False
         counts[int(c) - 1] += 1
     for count in counts:

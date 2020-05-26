@@ -15,7 +15,7 @@ def main():
             w -= 1
             continue
         y = int(s)
-        if is_pandigital(y) and y > largest:
+        if is_pandigital(y, 9) and y > largest:
             largest = y
     print(largest)
 

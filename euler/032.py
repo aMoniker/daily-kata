@@ -16,7 +16,7 @@ def process_ranges(aLower: int, aUpper: int, bLower: int, bUpper: int):
             product = a * b
             if not product in products:
                 y = int(str(a) + str(b) + str(product))
-                if is_pandigital(y):
+                if is_pandigital(y, 9):
                     products[product] = True
 
 
