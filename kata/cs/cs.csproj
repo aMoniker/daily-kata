@@ -9,6 +9,7 @@
       Constructing-a-car-2.cs;
       Constructing-a-car-3.cs;
       Decode-the-morse-code-2.cs;
+      Implement-the-Unnormalized-Cardinal-Sine.cs
     </DefaultItemExcludes>
 
   </PropertyGroup>
