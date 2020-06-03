@@ -87,3 +87,25 @@ def is_pandigital(x: int, n: int) -> bool:
         if count != 1:
             return False
     return True
+
+
+def get_pentagonal_number(n: int) -> int:
+    return int((3 * pow(n, 2) - n) / 2)
+
+
+def get_triangular_number(n: int) -> int:
+    return n * (n + 1) / 2
+
+
+def get_hexagonal_number(n: int) -> int:
+    return n * (2 * n - 1)
+
+
+def is_triangular(x: int) -> bool:
+    n = (math.sqrt(1 + 8 * x) - 1) / 2
+    return n % 1 == 0
+
+
+def is_pentagonal(x: int) -> bool:
+    n = (math.sqrt(24 * x + 1) + 1) / 6
+    return n % 1 == 0
