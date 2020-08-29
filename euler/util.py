@@ -28,6 +28,23 @@ def get_factors(n: int) -> List[int]:
     return factors
 
 
+# get list of all prime factors (including n if prime)
+def get_prime_factors(n: int) -> List[int]:
+    factors: List[int] = []
+    if n <= 0:
+        return factors
+    while n % 2 == 0:
+        factors.append(2)
+        n = int(n / 2)
+    for i in range(3, math.floor(math.sqrt(n)) + 1, 2):
+        while n % i == 0:
+            factors.append(i)
+            n = int(n / i)
+    if n > 2:
+        factors.append(n)
+    return factors
+
+
 def factorial(n: int) -> int:
     if n == 1:
         return 1
