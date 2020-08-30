@@ -111,7 +111,7 @@ def get_pentagonal_number(n: int) -> int:
 
 
 def get_triangular_number(n: int) -> int:
-    return n * (n + 1) / 2
+    return int(n * (n + 1) / 2)
 
 
 def get_hexagonal_number(n: int) -> int:
