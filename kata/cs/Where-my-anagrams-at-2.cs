@@ -4,13 +4,6 @@ using System.Collections.Generic;
 
 public static class WhereMyAnagramsAt2Kata
 {
-  private static void Main()
-  {
-    var a = Anagrams("abba", new List<string> { "aabb", "abcd", "bbaa", "dada" });
-    Console.WriteLine($"found {a.Count} anagrams");
-    Console.WriteLine($"got anagrams: {String.Join(", ", a)}");
-  }
-
   public static List<string> Anagrams(string word, List<string> words)
   {
     var matches = new List<string>();
